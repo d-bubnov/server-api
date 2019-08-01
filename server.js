@@ -21,6 +21,6 @@ app.use('/products', productRoute);
 
 let port = process.env.PORT || 4000;
 
-const server = app.listen(function(){
+const server = app.listen(port, function(){
     console.log('Listening on port: ' + port);
 });
