@@ -52,8 +52,8 @@ productRoutes.route('/').get(function (request, response) {
   });
 });
 
-// Defined edit route
-productRoutes.route('/edit/:id').get(function (request, response) {
+// Defined get route
+productRoutes.route('/get/:id').get(function (request, response) {
   let id = request.params.id;
   Product.findById(id, function (error, product) {
     if (error) {
