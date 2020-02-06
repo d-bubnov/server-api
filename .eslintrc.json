@@ -1,0 +1,53 @@
+{
+    "env": {
+        "node": true,
+        "es6": true
+    },
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "quotes": [1, "single", { "allowTemplateLiterals": true }],
+        "indent": [1, 2, { "SwitchCase": 1 }],
+        "no-tabs": 1,
+        "no-param-reassign": 1,
+        "camelcase": 1,
+        "no-console": 0,
+        "no-debugger": 2,
+        "no-const-assign": 2,
+        "no-useless-constructor": 1,
+        "no-case-declarations": 1,
+        "no-empty-function": 1,
+        "no-unused-vars": 1,
+        "no-unused-expressions": 1,
+        "no-with": 2,
+        "no-undef": 2,
+        "eol-last": [1, "always"],
+        "no-new-symbol": 1,
+        "prefer-const": 1,
+        "comma-dangle":[1, "always-multiline"],
+        "no-trailing-spaces": 1,
+        "space-infix-ops": 1,
+        "semi": 1,
+        "object-curly-spacing": [1, "always"],
+        "key-spacing": [1, { "afterColon": true }],
+        "comma-spacing": 1,
+        "no-magic-numbers": [1, { "ignore": [-1, 0, 1, 2, 100] }],
+        "consistent-return": [1, { "treatUndefinedAsUnspecified": true }],
+        "eqeqeq": [1, "always"],
+        "no-warning-comments": 0,
+        "object-shorthand": 1,
+        "no-else-return": 1,
+        "brace-style": [1, "1tbs"],
+        "no-alert": 1
+    }
+}
