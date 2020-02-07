@@ -1,6 +1,32 @@
 import _ from 'lodash';
-import { IRequestedVariable, IKeyValuePairVariables } from '../interfaces';
 
+// Define type of input parameters
+interface IRequestedVariable {
+  name: string;
+  default?: string;
+}
+
+// Define type of output parameters
+interface IKeyValuePairVariables {
+  [key: string]: string
+}
+
+/**
+ * Read and get environment variables
+ *
+ * @param variables - array - the array of environment variables
+ * @param variables[].name string (required) - the name of environment variable
+ * @param variables[].default string (optional) - the default value if environment variable is not set
+ *
+ * @returns object with properties
+ * Where:
+ *  - property name - the name of environment variable
+ *  - property value - the value of environment variable
+ *
+ * For note:
+ * The method returns property names in camel case format.
+ * For example: "SERVER_PORT" => serverPort
+ */
 const getEnvs = (variables: IRequestedVariable[]) => {
   const result: IKeyValuePairVariables = {};
 
