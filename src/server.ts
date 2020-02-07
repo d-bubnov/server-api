@@ -35,8 +35,11 @@ const application = express();
 const appBodyParser = bodyParser.json();
 const appCors = cors();
 
+// body parsing middleware (parse incoming request bodies)
 application.use(appBodyParser);
+// Connect/Express middleware (enable CORS)
 application.use(appCors);
+// middleware to handle a requests
 application.use('/products', productRoute);
 
 // Start server with API on selected http port
