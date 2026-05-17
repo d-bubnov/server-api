@@ -19,7 +19,7 @@
     "cors": "^2.8.5",
     "express": "^4.22.0",
     "lodash": "^4.17.15",
-    "mongoose": "^6.13.6",
+    "mongoose": "^6.13.9",
     "typescript": "^3.7.5"
   },
   "devDependencies": {
